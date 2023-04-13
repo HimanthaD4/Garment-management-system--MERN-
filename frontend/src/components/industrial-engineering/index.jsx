@@ -200,6 +200,6 @@ const IndustrialEngineering = (props) => {
     </div>
   );
 };
-export default IndustrialEngineering;
+
 
 //IT21129476 N.N.M.H.Hirushan 
