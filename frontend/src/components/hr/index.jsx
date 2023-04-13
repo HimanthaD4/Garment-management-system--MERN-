@@ -50,9 +50,6 @@ const HR = (props) => {
       joinDate: new Date(),
     };
 
-
-    //888888888888888888888888888888888888888888
-
     if(updateToggle) {
       axios.put(API_URL + hrRouter + "update" + `/${id}`, model).then((response) => {
         getData();
@@ -79,7 +76,6 @@ const HR = (props) => {
     }
   });
 
-  //88888888888888888888888888888888888888888888
   const updateData =(id)=> {
     setUpdateToggle(true);
     setId(id)
@@ -87,8 +83,6 @@ const HR = (props) => {
       console.log(response.data);
       console.log(response.data[0]);
 
-   
-//8888888888888888888888888888888888888888888888
       setFirstName(response.data[0].fName)
       setLastName(response.data[0].lName)
       setNIC(response.data[0].nic)
@@ -102,7 +96,6 @@ const HR = (props) => {
       // setResponse(response.data);
     });
   }
-//8888888888888888888888888888888888888888888
   const deleteData =(id)=> {
     console.log("test")
     axios.delete(API_URL + hrRouter + "delete" + `/${id}`).then((response) => {
